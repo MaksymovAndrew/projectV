@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      body {
+        background-image: url("photos/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .myButton {
+        display: inline-block;
+        padding: 16px 30px;
+        font-size: 22px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #af4caf;
+        color: #fff;
+        border: 2px solid #e40ac3;
+        font-family: "Comic Sans MS", cursive;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .myButton:hover {
+        background-color: #45054b;
+        color: #ce22d4;
+      }
+      .beautifulText {
+        font-family: "Comic Sans MS", cursive;
+        font-size: 30px;
+        color: #dc51f5;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        letter-spacing: 1px;
+        line-height: 1.5;
+        text-shadow: -1.2px -1.5px 0 #000, 1.2px -1.5px 0 #000,
+          -1.2px 1.5px 0 #000, 1.2px 1.5px 0 #000;
+      }
+      .visible {
+        display: block;
+      }
+
+      .invisible {
+        display: none;
+      }
+    </style>
+    <title>Will You be my Valentine?</title>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="beautifulText visible">Will You be my Valentine?</h1>
+    </header>
+    <img
+      id="zmey"
+      src="photos/zmiuchka.jpg"
+      style="
+        position: absolute;
+        top: 51%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+        margin: 5px;
+        max-width: 200px;
+        max-height: 200px;
+      "
+    />
+    <img
+      id="talking"
+      src="photos/talking.jpg"
+      style="
+        position: absolute;
+        top: 51%;
+        left: 27%;
+        transform: translate(-50%, -50%);
+        margin: 5px;
+        max-width: 200px;
+        max-height: 200px;
+      "
+    />
+    <div class="beautifulText"></div>
+    <button
+      class="myButton"
+      id="buttonYes"
+      style="
+        position: absolute;
+        top: 55%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      Yes
+    </button>
+    <button
+      class="myButton"
+      id="buttonNo"
+      style="
+        position: absolute;
+        top: 55%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      No
+    </button>
+    <div id="hidden"></div>
+  </body>
+</html>
