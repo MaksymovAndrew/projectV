@@ -58,14 +58,16 @@ buttonYes.addEventListener("click", () => {
   buttonYes.classList.toggle("invisible");
   ansText.textContent = "I LOVE YOU SO MUCH MY DARLING ♥";
   //adding images
-  hiddenText.appendChild(imageUmir);
-  hiddenText.appendChild(imageVlub);
-  hiddenText.appendChild(imageSitting);
-  hiddenText.appendChild(imageReading);
-  hiddenText.appendChild(imageYchki);
-  hiddenText.appendChild(imageFlying);
-  hiddenText.appendChild(imageHeart);
-  hiddenText.appendChild(imageRain);
+  hiddenText.append(
+    imageUmir,
+    imageVlub,
+    imageSitting,
+    imageReading,
+    imageYchki,
+    imageFlying,
+    imageHeart,
+    imageRain
+  );
 });
 //no function
 buttonNo.addEventListener("click", () => {
